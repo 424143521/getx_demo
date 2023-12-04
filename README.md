@@ -1,15 +1,14 @@
+GetX 是一个在Flutter上的轻量级且强大的解决方案，为我们提供了高效的状态管理、智能的依赖注入和便捷的路由管理。GetX的三个基本原则是性能、效率和结构。GetX专注于性能和最小的资源消耗，其打包后的apk大小和运行时的内存占用与其他状态管理插件相当。GetX的语法简洁且高效，可以大大缩短开发时间。同时，GetX可以将界面、逻辑、依赖和路由完全解耦，使代码更清晰，更易于维护。
 
-A new Flutter project.
+GetX并不臃肿，反而非常轻量。如果你只使用状态管理，那么只有状态管理模块会被编译，其他未使用的部分不会被编译到你的代码中。尽管GetX拥有众多功能，但这些功能都在独立的容器中，只有在使用后才会启动。
 
-## Getting Started
+GetX拥有一个庞大的生态系统，可以在Android、iOS、Web、Mac、Linux、Windows和服务器上运行相同的代码。通过Get Server，你甚至可以在后端完全重用前端的代码。
 
-This project is a starting point for a Flutter application.
+里面包括了
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+*GetX的各种配置，中间件，导航，控制器等等
+* Dialog，Snackbar，BottomSheet以及主题改变
+* GetX的路由管理
+* GetX的状态管理
+* GetxController生命周期
+  
