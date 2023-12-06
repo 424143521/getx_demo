@@ -12,3 +12,32 @@ GetX拥有一个庞大的生态系统，可以在Android、iOS、Web、Mac、Lin
 * GetX的状态管理
 * GetxController生命周期
   
+dependencies:
+
+get: ^4.6.5
+
+
+
+Get.toNamed("/login");跳转到命名路由
+
+Get.to(Home());`to`接收一个页面组件
+
+Get.toNamed("/shop",arguments: {
+
+"id":20
+
+});//`arguments`传参。**发送任何参数都可以接收**，不论是什么类型！甚至是类的实例！
+
+Get.offAllNamed("/NextScreen?device=phone&id=111&name=liang");//问号传参，只能接收字符串
+
+Get.parameters['id']接受传值 
+
+Get.back();返回上一层
+
+返回到根Get.offAll( const Tabs(index: 4));该方法会清空我们之前打开过的页面，只留下新的页面
+
+Get.off(NextScreen());它会替拿当新页面换掉当前页面，但没有返回上一个页面的选项（用于闪屏页，登录页面等）。
+
+Controller controller = Get.put(Controller());
+
+Controller controller = Get.find();
